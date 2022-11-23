@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<style type="text/css">
+body{background:#000;margin:0;padding:0;}
+</style>
+<script>
+var getURL = getParameterByName('get');
+var getLang = getParameterByName('lang');
+</script>
+<script src="https://ssl.p.jwpcdn.com/player/v/8.21.0/jwplayer.js"></script>
+<script>jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+<div id="player"></div>
+<script>
+var playerInstance = jwplayer("player");
+playerInstance.setup({
+playlist: [{
+"title": "ESTAS VIENDO FAFEPLAY",
+"sources": [{
+"default": false,
+"type": "dash",
+"file": 'https://dtvott-abc.akamaized.net/dash_live_1059/manifest.mpd',
+"drm": {
+"clearkey": { "keyId": "60203b253cb45019b0a739bb2b32345a", 
+"key": "31e8d7c9def0d523c559904f23f94ce2" }},
+"label": "0"}]}],
+width: "100%",
+height: "100%",
+aspectratio: "16:9",
+autostart: false,
+logo: {
+file: '',
+link: '',
+position: 'top-right'},
+cast:{}});
+</script>
